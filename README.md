@@ -57,7 +57,7 @@ abc
     [centos@localhost ~]$ asdasdf
     bash: asdasdf: command not found...
     ```
-  - Redirect stderr to stdout using 2>
+  - Redirect stderr using 2>
 
     ```
     [centos@localhost ~]$ asdasdf 2> /tmp/file.txt
@@ -80,7 +80,7 @@ abc
     [centos@localhost ~]$ cat /tmp/file.txt 
     bash: asdfasdf: command not found...
     ```
-  - Display both stdout and std error
+  - Display both stdout and stderr
 
     ```
     [centos@localhost ~]$ (echo one && asdfasdf)
