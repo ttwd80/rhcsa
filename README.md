@@ -33,7 +33,7 @@ abc
     [centos@localhost ~]$ cat /tmp/file.txt
     two
     ```
-   - Redirect stdout using >> (append)
+  - Redirect stdout using > (overwrite)
 
     ```
     [centos@localhost ~]$ rm -f /tmp/file.txt
