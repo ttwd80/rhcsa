@@ -43,3 +43,11 @@ abc
     one
     two
     ```
+  - Using pipes - |
+
+    ```
+    [centos@localhost ~]$ echo one > /tmp/file.txt 
+    [centos@localhost ~]$ echo two >> /tmp/file.txt 
+    [centos@localhost ~]$ grep wo /tmp/file.txt 
+    two
+    ```
