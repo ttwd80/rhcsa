@@ -51,3 +51,9 @@ abc
     [centos@localhost ~]$ grep wo /tmp/file.txt 
     two
     ```
+  - Direct stderr
+
+    ```
+    [centos@localhost ~]$ asdasdf
+    bash: asdasdf: command not found...
+    ```
