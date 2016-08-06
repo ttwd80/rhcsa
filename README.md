@@ -275,3 +275,54 @@ Section 1: Understand and use essential tools
     file-2.txt
     file-3.txt
     ```
+  - Compress using gzip
+  
+    ```
+    [centos@localhost ~]$ rm -rf file
+    [centos@localhost ~]$ dd if=/dev/zero of=file bs=1M count=100
+    100+0 records in
+    100+0 records out
+    104857600 bytes (105 MB) copied, 0.0467223 s, 2.2 GB/s
+    [centos@localhost ~]$ ls -s file
+    102400 file
+    [centos@localhost ~]$ 
+    [centos@localhost ~]$ 
+    [centos@localhost ~]$ 
+    [centos@localhost ~]$ rm -rf file*
+    [centos@localhost ~]$ dd if=/dev/zero of=file bs=1M count=100
+    100+0 records in
+    100+0 records out
+    104857600 bytes (105 MB) copied, 0.0474118 s, 2.2 GB/s
+    [centos@localhost ~]$ ls -s file*
+    102400 file
+    [centos@localhost ~]$ gzip file
+    [centos@localhost ~]$ ls -s file*
+    100 file.gz
+    ```
+  - Uncompress using gzip
+  
+    ```
+    [centos@localhost ~]$ rm -rf file
+    [centos@localhost ~]$ dd if=/dev/zero of=file bs=1M count=100
+    100+0 records in
+    100+0 records out
+    104857600 bytes (105 MB) copied, 0.0467223 s, 2.2 GB/s
+    [centos@localhost ~]$ ls -s file
+    102400 file
+    [centos@localhost ~]$ 
+    [centos@localhost ~]$ 
+    [centos@localhost ~]$ 
+    [centos@localhost ~]$ rm -rf file*
+    [centos@localhost ~]$ dd if=/dev/zero of=file bs=1M count=100
+    100+0 records in
+    100+0 records out
+    104857600 bytes (105 MB) copied, 0.0474118 s, 2.2 GB/s
+    [centos@localhost ~]$ ls -s file*
+    102400 file
+    [centos@localhost ~]$ gzip file
+    [centos@localhost ~]$ ls -s file*
+    100 file.gz
+    [centos@localhost ~]$ gunzip file.gz 
+    [centos@localhost ~]$ ls -s file*
+    102400 file
+    ```
