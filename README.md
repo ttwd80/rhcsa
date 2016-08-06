@@ -64,5 +64,26 @@ abc
     [centos@localhost ~]$ cat /tmp/file.txt 
     bash: asdasdf: command not found...
     ```
+  - Redirect stdout to file and display stderr
 
+    ```
+    [centos@localhost ~]$ (echo one && asdfasdf) > /tmp/file.txt
+    bash: asdfasdf: command not found...
+    [centos@localhost ~]$ cat /tmp/file.txt 
+    one
+    ```
+  - Display stdout and redirect stderr to file
 
+    ```
+    [centos@localhost ~]$ (echo one && asdfasdf) 2> /tmp/file.txt
+    one
+    [centos@localhost ~]$ cat /tmp/file.txt 
+    bash: asdfasdf: command not found...
+    ```
+  - Display both stdout and std error
+
+    ```
+    [centos@localhost ~]$ (echo one && asdfasdf)
+    one
+    bash: asdfasdf: command not found...
+    ```
