@@ -278,16 +278,6 @@ Section 1: Understand and use essential tools
   - Compress using gzip
   
     ```
-    [centos@localhost ~]$ rm -rf file
-    [centos@localhost ~]$ dd if=/dev/zero of=file bs=1M count=100
-    100+0 records in
-    100+0 records out
-    104857600 bytes (105 MB) copied, 0.0467223 s, 2.2 GB/s
-    [centos@localhost ~]$ ls -s file
-    102400 file
-    [centos@localhost ~]$ 
-    [centos@localhost ~]$ 
-    [centos@localhost ~]$ 
     [centos@localhost ~]$ rm -rf file*
     [centos@localhost ~]$ dd if=/dev/zero of=file bs=1M count=100
     100+0 records in
@@ -302,16 +292,6 @@ Section 1: Understand and use essential tools
   - Uncompress using gzip
   
     ```
-    [centos@localhost ~]$ rm -rf file
-    [centos@localhost ~]$ dd if=/dev/zero of=file bs=1M count=100
-    100+0 records in
-    100+0 records out
-    104857600 bytes (105 MB) copied, 0.0467223 s, 2.2 GB/s
-    [centos@localhost ~]$ ls -s file
-    102400 file
-    [centos@localhost ~]$ 
-    [centos@localhost ~]$ 
-    [centos@localhost ~]$ 
     [centos@localhost ~]$ rm -rf file*
     [centos@localhost ~]$ dd if=/dev/zero of=file bs=1M count=100
     100+0 records in
