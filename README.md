@@ -8,3 +8,4 @@ Section 1: Understand and use essential tools
 [centos@localhost ~]$ echo abc
 abc
 ```
+- Use input-output redirection (>, >>, |, 2>, etc.)
