@@ -97,7 +97,8 @@ Section 1: Understand and use essential tools
     ```
 
 - Use grep and regular expressions to analyze text
-  ```
+  - Grep without regular expression
+    ```
     [centos@localhost ~]$ rm -f /tmp/file.txt 
     [centos@localhost ~]$ for n in {1..100} ; do echo $n >> /tmp/file.txt ; done
     [centos@localhost ~]$ grep 6 /tmp/file.txt 
@@ -120,4 +121,4 @@ Section 1: Understand and use essential tools
     76
     86
     96
-  ```
+    ```
