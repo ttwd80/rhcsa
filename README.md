@@ -296,7 +296,7 @@ Section 1: Understand and use essential tools
     [centos@localhost ~]$ dd if=/dev/zero of=file bs=1M count=100
     100+0 records in
     100+0 records out
-    104857600 bytes (105 MB) copied, 0.0474118 s, 2.2 GB/s
+    104857600 bytes (105 MB) copied, 0.0482277 s, 2.2 GB/s
     [centos@localhost ~]$ ls -s file*
     102400 file
     [centos@localhost ~]$ gzip file
