@@ -396,7 +396,30 @@ Section 1: Understand and use essential tools
   - List standard ugo/rwx permissions
   
     ```
+    [centos@localhost ~]$ rm -rf file-1.txt
     [centos@localhost ~]$ touch file-1.txt
     [centos@localhost ~]$ ls -l file-1.txt | cut -f 1 -d' '
     -rw-rw-r--.
+    ```
+  - Set standard ugo/rwx permissions
+  
+    ```
+    [centos@localhost ~]$ rm -rf file-1.txt
+    [centos@localhost ~]$ touch file-1.txt
+    [centos@localhost ~]$ ls -l file-1.txt | cut -f 1 -d' '
+    -rw-rw-r--.
+    [centos@localhost ~]$ chmod go= file-1.txt 
+    [centos@localhost ~]$ ls -l file-1.txt | cut -f 1 -d' '
+    -rw-------.
+    ```
+  - Change standard ugo/rwx permissions
+  
+    ```
+    [centos@localhost ~]$ rm -rf file-1.txt
+    [centos@localhost ~]$ touch file-1.txt
+    [centos@localhost ~]$ ls -l file-1.txt | cut -f 1 -d' '
+    -rw-rw-r--.
+    [centos@localhost ~]$ chmod o+w file-1.txt 
+    [centos@localhost ~]$ ls -l file-1.txt | cut -f 1 -d' '
+    -rw-rw-rw-.
     ```
