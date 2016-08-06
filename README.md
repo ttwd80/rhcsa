@@ -140,3 +140,14 @@ Section 1: Understand and use essential tools
     86
     96
     ```
+- Access remote systems using ssh
+  ```
+    [centos@localhost ~]$ ssh localhost
+    The authenticity of host 'localhost (::1)' can't be established.
+    ECDSA key fingerprint is 36:89:50:3d:9c:01:6d:e1:59:35:cb:59:29:cb:a4:fc.
+    Are you sure you want to continue connecting (yes/no)? yes
+    Warning: Permanently added 'localhost' (ECDSA) to the list of known hosts.
+    centos@localhost's password: 
+    Last login: Sat Aug  6 17:28:12 2016 from 192.168.56.1
+    [centos@localhost ~]$ 
+  ```
