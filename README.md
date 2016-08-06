@@ -198,10 +198,11 @@ Section 1: Understand and use essential tools
     [centos@localhost ~]$ file files.tar 
     files.tar: POSIX tar archive (GNU)
     ```
-  - Unpack Archive using tar 
+  - Unpack archive using tar
   
     ```
     [centos@localhost ~]$ rm -rf files
+    [centos@localhost ~]$ rm -rf files.tar
     [centos@localhost ~]$ mkdir files
     [centos@localhost ~]$ ls -1 files/
     [centos@localhost ~]$ date > files/file-1.txt
@@ -211,7 +212,6 @@ Section 1: Understand and use essential tools
     file-1.txt
     file-2.txt
     file-3.txt
-    [centos@localhost ~]$ rm -rf files.tar
     [centos@localhost ~]$ tar cvf files.tar files/
     files/
     files/file-1.txt
@@ -220,7 +220,7 @@ Section 1: Understand and use essential tools
     [centos@localhost ~]$ rm -rf files/
     [centos@localhost ~]$ ls -1 files/
     ls: cannot access files/: No such file or directory
-    [centos@localhost ~]$ tar xvf files.tar 
+    [centos@localhost ~]$ tar xvf files.tar
     files/
     files/file-1.txt
     files/file-2.txt
@@ -230,3 +230,21 @@ Section 1: Understand and use essential tools
     file-2.txt
     file-3.txt
     ```
+  - Archive using star 
+  
+    ```
+    [centos@localhost ~]$ rm -rf files
+    [centos@localhost ~]$ rm -rf files.star
+    [centos@localhost ~]$ mkdir files
+    [centos@localhost ~]$ ls -1 files/
+    [centos@localhost ~]$ date > files/file-1.txt
+    [centos@localhost ~]$ date > files/file-2.txt
+    [centos@localhost ~]$ date > files/file-3.txt
+    [centos@localhost ~]$ ls -1 files.star
+    ls: cannot access files.star: No such file or directory
+    [centos@localhost ~]$ star -c -f=files.star files/
+    star: 1 blocks + 0 bytes (total of 10240 bytes = 10.00k).
+    [centos@localhost ~]$ ls -1 files.star
+    files.star
+    ```
+- Unpack Archive using tar 
