@@ -9,3 +9,5 @@ Section 1: Understand and use essential tools
 abc
 ```
 - Use input-output redirection (>, >>, |, 2>, etc.)
+  - Direct stdout
+    ```echo one```
