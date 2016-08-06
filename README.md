@@ -423,3 +423,8 @@ Section 1: Understand and use essential tools
     [centos@localhost ~]$ ls -l file-1.txt | cut -f 1 -d' '
     -rw-rw-rw-.
     ```
+- Locate, read, and use system documentation including man, info, and files in /usr/share/doc
+  
+    ```
+    [centos@localhost ~]$ man ls
+    ```
