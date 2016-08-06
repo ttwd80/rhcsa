@@ -323,6 +323,7 @@ Section 1: Understand and use essential tools
     file
     ```
   - Delete files
+  
     ```
     [centos@localhost ~]$ rm -rf file*
     [centos@localhost ~]$ ls -1 file
@@ -335,6 +336,7 @@ Section 1: Understand and use essential tools
     ls: cannot access file: No such file or directory
     ```
   - Copy files
+  
     ```
     [centos@localhost ~]$ rm -rf file*
     [centos@localhost ~]$ ls -1 file*
