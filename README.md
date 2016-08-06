@@ -198,4 +198,34 @@ Section 1: Understand and use essential tools
     [centos@localhost ~]$ file files.tar 
     files.tar: POSIX tar archive (GNU)
     ```
-  - Archive using tar 
+  - Unpack Archive using tar 
+    ```
+    [centos@localhost ~]$ rm -rf files
+    [centos@localhost ~]$ mkdir files
+    [centos@localhost ~]$ ls -1 files/
+    [centos@localhost ~]$ date > files/file-1.txt
+    [centos@localhost ~]$ date > files/file-2.txt
+    [centos@localhost ~]$ date > files/file-3.txt
+    [centos@localhost ~]$ ls -1 files/
+    file-1.txt
+    file-2.txt
+    file-3.txt
+    [centos@localhost ~]$ rm -rf files.tar
+    [centos@localhost ~]$ tar cvf files.tar files/
+    files/
+    files/file-1.txt
+    files/file-2.txt
+    files/file-3.txt
+    [centos@localhost ~]$ rm -rf files/
+    [centos@localhost ~]$ ls -1 files/
+    ls: cannot access files/: No such file or directory
+    [centos@localhost ~]$ tar xvf files.tar 
+    files/
+    files/file-1.txt
+    files/file-2.txt
+    files/file-3.txt
+    [centos@localhost ~]$ ls -1 files/
+    file-1.txt
+    file-2.txt
+    file-3.txt
+    ```
