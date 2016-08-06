@@ -154,6 +154,7 @@ Section 1: Understand and use essential tools
   ```
 - Log in and switch users in multiuser targets
   - Log in
+  
   ```
     [root@localhost ~]# whoami 
     root
@@ -164,6 +165,7 @@ Section 1: Understand and use essential tools
     centos
   ```  
   - Switch user in multiuser targets
+  
   ```
     [centos@localhost ~]$ whoami
     centos
@@ -173,3 +175,27 @@ Section 1: Understand and use essential tools
     [root@localhost ~]# whoami 
     root
   ```
+- Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2
+  - Archive using tar
+  
+    ```
+    [centos@localhost ~]$ rm -rf files
+    [centos@localhost ~]$ mkdir files
+    [centos@localhost ~]$ ls -1 files/
+    [centos@localhost ~]$ date > files/file-1.txt
+    [centos@localhost ~]$ date > files/file-2.txt
+    [centos@localhost ~]$ date > files/file-3.txt
+    [centos@localhost ~]$ ls -1 files/
+    file-1.txt
+    file-2.txt
+    file-3.txt
+    [centos@localhost ~]$ rm -rf files.tar
+    [centos@localhost ~]$ tar cvf files.tar files/
+    files/
+    files/file-1.txt
+    files/file-2.txt
+    files/file-3.txt
+    [centos@localhost ~]$ file files.tar 
+    files.tar: POSIX tar archive (GNU)
+    ```
+  - Archive using tar 
