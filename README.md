@@ -311,3 +311,14 @@ Section 1: Understand and use essential tools
   ```
   [centos@localhost ~]$ vi file
   ```
+- Create, delete, copy, and move files and directories
+  - Create files
+  
+    ```
+    [centos@localhost ~]$ rm -rf file*
+    [centos@localhost ~]$ ls -1 file
+    ls: cannot access file: No such file or directory
+    [centos@localhost ~]$ touch file
+    [centos@localhost ~]$ ls -1 file
+    file
+    ```
