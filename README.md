@@ -57,3 +57,12 @@ abc
     [centos@localhost ~]$ asdasdf
     bash: asdasdf: command not found...
     ```
+  - Redirect stderr to stdout using 2>
+
+    ```
+    [centos@localhost ~]$ asdasdf 2> /tmp/file.txt
+    [centos@localhost ~]$ cat /tmp/file.txt 
+    bash: asdasdf: command not found...
+    ```
+
+
