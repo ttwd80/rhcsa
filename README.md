@@ -6,8 +6,8 @@ Section 1: Understand and use essential tools
 - Access a shell prompt and issue commands with correct syntax
 
   ```
-[centos@localhost ~]$ echo abc
-abc
+  [centos@localhost ~]$ echo abc
+  abc
   ```
 - Use input-output redirection (>, >>, |, 2>, etc.)
   - Direct stdout
@@ -95,3 +95,29 @@ abc
     one
     bash: asdfasdf: command not found...    
     ```
+
+- Use grep and regular expressions to analyze text
+  ```
+    [centos@localhost ~]$ rm -f /tmp/file.txt 
+    [centos@localhost ~]$ for n in {1..100} ; do echo $n >> /tmp/file.txt ; done
+    [centos@localhost ~]$ grep 6 /tmp/file.txt 
+    6
+    16
+    26
+    36
+    46
+    56
+    60
+    61
+    62
+    63
+    64
+    65
+    66
+    67
+    68
+    69
+    76
+    86
+    96
+  ```
