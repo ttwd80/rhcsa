@@ -141,6 +141,7 @@ Section 1: Understand and use essential tools
     96
     ```
 - Access remote systems using ssh
+
   ```
     [centos@localhost ~]$ ssh localhost
     The authenticity of host 'localhost (::1)' can't be established.
@@ -150,4 +151,25 @@ Section 1: Understand and use essential tools
     centos@localhost's password: 
     Last login: Sat Aug  6 17:28:12 2016 from 192.168.56.1
     [centos@localhost ~]$ 
+  ```
+- Log in and switch users in multiuser targets
+  - Log in
+  ```
+    [root@localhost ~]# whoami 
+    root
+    [root@localhost ~]# ssh centos@localhost
+    centos@localhost's password: 
+    Last login: Sat Aug  6 19:28:42 2016 from localhost
+    [centos@localhost ~]$ whoami 
+    centos
+  ```  
+  - Switch user in multiuser targets
+  ```
+    [centos@localhost ~]$ whoami
+    centos
+    [centos@localhost ~]$ su -
+    Password: 
+    Last login: Sat Aug  6 17:14:58 AEST 2016 on pts/0
+    [root@localhost ~]# whoami 
+    root
   ```
