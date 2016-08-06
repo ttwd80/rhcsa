@@ -38,7 +38,8 @@ abc
     ```
     [centos@localhost ~]$ rm -f /tmp/file.txt
     [centos@localhost ~]$ echo one > /tmp/file.txt
-    [centos@localhost ~]$ echo two > /tmp/file.txt
-    [centos@localhost ~]$ cat /tmp/file.txt
+    [centos@localhost ~]$ echo two >> /tmp/file.txt
+    [centos@localhost ~]$ cat /tmp/file.txt 
+    one
     two
     ```
