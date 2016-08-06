@@ -10,6 +10,6 @@ abc
 ```
 - Use input-output redirection (>, >>, |, 2>, etc.)
   - Direct stdout
-    ```
-    echo one
-    ```
+      ```
+      echo one
+      ```
