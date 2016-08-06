@@ -392,3 +392,11 @@ Section 1: Understand and use essential tools
     [centos@localhost ~]$ file file-2.txt
     file-2.txt: symbolic link to `file-1.txt'
     ```
+- List, set, and change standard ugo/rwx permissions
+  - List standard ugo/rwx permissions
+  
+    ```
+    [centos@localhost ~]$ touch file-1.txt
+    [centos@localhost ~]$ ls -l file-1.txt | cut -f 1 -d' '
+    -rw-rw-r--.
+    ```
