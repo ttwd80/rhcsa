@@ -87,3 +87,11 @@ abc
     one
     bash: asdfasdf: command not found...
     ```
+  - Redirect both stdout and stderr to file
+
+    ```
+    [centos@localhost ~]$ (echo one && asdfasdf) > /tmp/file.txt 2>&1
+    [centos@localhost ~]$ cat /tmp/file.txt 
+    one
+    bash: asdfasdf: command not found...    
+    ```
