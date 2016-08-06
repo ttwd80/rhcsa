@@ -322,3 +322,29 @@ Section 1: Understand and use essential tools
     [centos@localhost ~]$ ls -1 file
     file
     ```
+  - Delete files
+    ```
+    [centos@localhost ~]$ rm -rf file*
+    [centos@localhost ~]$ ls -1 file
+    ls: cannot access file: No such file or directory
+    [centos@localhost ~]$ touch file
+    [centos@localhost ~]$ ls -1 file
+    file
+    [centos@localhost ~]$ rm file
+    [centos@localhost ~]$ ls -1 file
+    ls: cannot access file: No such file or directory
+    ```
+  - Copy files
+    ```
+    [centos@localhost ~]$ rm -rf file*
+    [centos@localhost ~]$ ls -1 file*
+    ls: cannot access file*: No such file or directory
+    [centos@localhost ~]$ dd if=/dev/zero of=file1 bs=1M count=10
+    10+0 records in
+    10+0 records out
+    10485760 bytes (10 MB) copied, 0.00449607 s, 2.3 GB/s
+    [centos@localhost ~]$ cp file1 file2
+    [centos@localhost ~]$ ls -s file*
+    10240 file1  10240 file2
+    [centos@localhost ~]$ diff file1 file2
+    ```
