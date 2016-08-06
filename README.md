@@ -23,7 +23,7 @@ one
   [centos@localhost ~]$ cat /tmp/file.txt
   one
     ```
-    - Redirect stdout using > (overwrite)
+  - Redirect stdout using > (overwrite)
 
     ```
     [centos@localhost ~]$ rm -f /tmp/file.txt
