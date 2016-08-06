@@ -361,3 +361,34 @@ Section 1: Understand and use essential tools
     [centos@localhost ~]$ ls -1 files/
     file-1.txt
     ```
+- Create hard and soft links
+  - Create hard links
+  
+    ```
+    [centos@localhost ~]$ rm -rf file*
+    [centos@localhost ~]$ touch file-1.txt
+    [centos@localhost ~]$ ls -i file*
+    104156772 file-1.txt
+    [centos@localhost ~]$ ln file-1.txt file-2.txt
+    [centos@localhost ~]$ ls -i file*
+    104156772 file-1.txt  104156772 file-2.txt
+    [centos@localhost ~]$ file file-1.txt
+    file-1.txt: empty
+    [centos@localhost ~]$ file file-2.txt
+    file-2.txt: empty
+    ```
+  - Create soft links
+  
+    ```
+    [centos@localhost ~]$ rm -rf file*
+    [centos@localhost ~]$ touch file-1.txt
+    [centos@localhost ~]$ ls -i file*
+    104156772 file-1.txt
+    [centos@localhost ~]$ ln -s file-1.txt file-2.txt
+    [centos@localhost ~]$ ls -i file*
+    104156772 file-1.txt  104156783 file-2.txt
+    [centos@localhost ~]$ file file-1.txt
+    file-1.txt: empty
+    [centos@localhost ~]$ file file-2.txt
+    file-2.txt: symbolic link to `file-1.txt'
+    ```
