@@ -15,3 +15,11 @@ abc
 [centos@localhost ~]$ echo one
 one
     ```
+  - Redirect stdout using >
+
+    ```
+  [centos@localhost ~]$ rm -f /tmp/file.txt
+  [centos@localhost ~]$ echo one > /tmp/file.txt
+  [centos@localhost ~]$ cat /tmp/file.txt
+  one
+    ```
