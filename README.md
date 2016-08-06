@@ -12,5 +12,6 @@ abc
   - Direct stdout
 
     ```
-    echo one
+[centos@localhost ~]$ echo one
+one
     ```
