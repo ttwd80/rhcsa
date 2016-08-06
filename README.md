@@ -98,6 +98,7 @@ Section 1: Understand and use essential tools
 
 - Use grep and regular expressions to analyze text
   - Grep without regular expression
+
     ```
     [centos@localhost ~]$ rm -f /tmp/file.txt 
     [centos@localhost ~]$ for n in {1..100} ; do echo $n >> /tmp/file.txt ; done
@@ -118,6 +119,23 @@ Section 1: Understand and use essential tools
     67
     68
     69
+    76
+    86
+    96
+    ```
+  - Grep with regular expression
+  
+    ```
+    [centos@localhost ~]$ rm -f /tmp/file.txt 
+    [centos@localhost ~]$ for n in {1..100} ; do echo $n >> /tmp/file.txt ; done
+    [centos@localhost ~]$ grep "6$" /tmp/file.txt 
+    6
+    16
+    26
+    36
+    46
+    56
+    66
     76
     86
     96
