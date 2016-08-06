@@ -13,16 +13,16 @@ abc
   - Direct stdout
 
     ```
-[centos@localhost ~]$ echo one
-one
+    [centos@localhost ~]$ echo one
+    one
     ```
   - Redirect stdout using >
 
     ```
-  [centos@localhost ~]$ rm -f /tmp/file.txt
-  [centos@localhost ~]$ echo one > /tmp/file.txt
-  [centos@localhost ~]$ cat /tmp/file.txt
-  one
+    [centos@localhost ~]$ rm -f /tmp/file.txt
+    [centos@localhost ~]$ echo one > /tmp/file.txt
+    [centos@localhost ~]$ cat /tmp/file.txt
+    one
     ```
   - Redirect stdout using > (overwrite)
 
@@ -31,5 +31,15 @@ one
     [centos@localhost ~]$ echo one > /tmp/file.txt
     [centos@localhost ~]$ echo two > /tmp/file.txt
     [centos@localhost ~]$ cat /tmp/file.txt
+    two
+    ```
+   - Redirect stdout using >> (append)
+
+    ```
+    [centos@localhost ~]$ rm -f /tmp/file.txt
+    [centos@localhost ~]$ echo one > /tmp/file.txt
+    [centos@localhost ~]$ echo two >> /tmp/file.txt
+    [centos@localhost ~]$ cat /tmp/file.txt
+    one
     two
     ```
