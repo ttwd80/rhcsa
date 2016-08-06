@@ -350,3 +350,14 @@ Section 1: Understand and use essential tools
     10240 file1  10240 file2
     [centos@localhost ~]$ diff file1 file2
     ```
+  - Move files
+  
+    ```
+    [centos@localhost ~]$ rm -rf file*
+    [centos@localhost ~]$ touch file-1.txt
+    [centos@localhost ~]$ mkdir files
+    [centos@localhost ~]$ ls -1 files/
+    [centos@localhost ~]$ mv file-1.txt files
+    [centos@localhost ~]$ ls -1 files/
+    file-1.txt
+    ```
