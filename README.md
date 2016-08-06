@@ -428,3 +428,6 @@ Section 1: Understand and use essential tools
     ```
     [centos@localhost ~]$ man ls
     ```
+
+Section 2: Operate running systems
+- Boot, reboot, and shut down a system normally
