@@ -199,6 +199,7 @@ Section 1: Understand and use essential tools
     files.tar: POSIX tar archive (GNU)
     ```
   - Unpack Archive using tar 
+  
     ```
     [centos@localhost ~]$ rm -rf files
     [centos@localhost ~]$ mkdir files
