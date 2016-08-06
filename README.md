@@ -306,3 +306,8 @@ Section 1: Understand and use essential tools
     [centos@localhost ~]$ ls -s file*
     102400 file
     ```
+- Create and edit text files
+
+  ```
+  [centos@localhost ~]$ vi file
+  ```
