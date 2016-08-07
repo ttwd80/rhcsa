@@ -431,3 +431,10 @@ Section 1: Understand and use essential tools
 
 Section 2: Operate running systems
 - Boot, reboot, and shut down a system normally
+  - Boot
+  - Reboot now
+  
+    ```
+    [root@localhost active]# shutdown -r now
+    ```
+  
