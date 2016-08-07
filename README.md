@@ -448,6 +448,7 @@ Section 2: Operate running systems
     [root@localhost ~]# systemctl isolate multi-user.target 
     ```
 - Interrupt the boot process in order to gain access to a system
+  
   # e to edit grub
   
   
