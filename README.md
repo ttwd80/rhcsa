@@ -437,4 +437,17 @@ Section 2: Operate running systems
     ```
     [root@localhost active]# shutdown -r now
     ```
+  - Shutdown 
+    
+    ```
+    [root@localhost active]# shutdown now
+    ```
+- Boot systems into different targets manually
+    
+    ```
+    [root@localhost ~]# systemctl isolate multi-user.target 
+    ```
+- Interrupt the boot process in order to gain access to a system
+  # e to edit grub
+  
   
