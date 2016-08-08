@@ -465,4 +465,11 @@ Section 2: Operate running systems
   
 - Identify CPU/memory intensive processes, adjust process priority with renice, and kill processes  
   - Identify CPU/memory intensive processes
+    
     Use ```top```
+    
+  - Adjust process priority with renice
+    
+    ```renice -n 10 pid```
+    
+    
