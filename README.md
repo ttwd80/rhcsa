@@ -463,4 +463,6 @@ Section 2: Operate running systems
   1. ```restorecon /etc/shadow```
   1. ```reboot```
   
-  
+- Identify CPU/memory intensive processes, adjust process priority with renice, and kill processes  
+  - Identify CPU/memory intensive processes
+    Use ```top```
