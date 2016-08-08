@@ -459,8 +459,8 @@ Section 2: Operate running systems
   1. enter new password
   1. enter new password again
   1. ```exit```
-  1. ```mount -o remount,ro /sysroot```
   1. ```exit```
-  
+  1. ```restorecon /etc/shadow```
+  1. ```reboot```
   
   
