@@ -477,7 +477,7 @@ Section 2: Operate running systems
     ```kill pid```
 - Locate and interpret system log files and journals
   
-  x```journalctl```
+  - ```journalctl```
 - Access a virtual machine's console
 - Start and stop virtual machines
 - Start, stop, and check the status of network services
