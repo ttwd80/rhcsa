@@ -475,4 +475,11 @@ Section 2: Operate running systems
   - kill processes
     
     ```kill pid```
-    
+- Locate and interpret system log files and journals
+  
+  ```journalctl```
+  
+- Access a virtual machine's console
+- Start and stop virtual machines
+- Start, stop, and check the status of network services
+- Securely transfer files between systems
