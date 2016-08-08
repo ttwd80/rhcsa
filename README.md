@@ -482,3 +482,6 @@ Section 2: Operate running systems
 - Start and stop virtual machines
 - Start, stop, and check the status of network services
 - Securely transfer files between systems
+
+Section 3: Configure local storage
+- List, create, delete partitions on MBR and GPT disks
