@@ -490,3 +490,4 @@ Section 3: Configure local storage
 - Add new partitions and logical volumes, and swap to a system non-destructively
 
 Section 4: Create and configure file systems
+- Create, mount, unmount, and use vfat, ext4, and xfs file systems
