@@ -449,6 +449,18 @@ Section 2: Operate running systems
     ```
 - Interrupt the boot process in order to gain access to a system
   
-  # e to edit grub
+  1. e to edit grub
+  1. add 'rd.break enforcing=0' at the end of linux16
+  1. control-x to start
+  1. remount as read-write ```mount -o remount,rw /sysroot```
+  1. confirm ```mount | grep /sysroot```
+  1. ```chroot /sysroot```
+  1. ```passwd```
+  1. enter new password
+  1. enter new password again
+  1. ```exit```
+  1. ```mount -o remount,ro /sysroot```
+  1. ```exit```
+  
   
   
