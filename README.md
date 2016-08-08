@@ -472,4 +472,7 @@ Section 2: Operate running systems
     
     ```renice -n 10 pid```
     
+  - kill processes
+    
+    ```kill pid```
     
